@@ -23,7 +23,7 @@ import React, { useEffect, useRef, useState } from "react";
   
     useEffect(() => {
   
-      const socket = io("http://localhost:3001");
+      const socket = io("https://chat-server-t3z2.onrender.com/");
       setNewSocket(socket)
   
       socket.on("connect", () => {
